@@ -1,5 +1,7 @@
 #!/bin/bash
 
-CWD=$(pwd)
-PYTHONPATH=$PYTHONPATH:$CWD/extensions \
-    landslide -x graphviz,asciimathml -t $CWD/themes -i -d $CWD/keepers.html $CWD/keepers.md
+CWD=$(dirname $(readlink -f $0))
+COMMON=$(dirname $CWD)/common
+DEST=$(basename $CWD)
+PYTHONPATH=$PYTHONPATH:$COMMON/extensions \
+    landslide -x graphviz,asciimathml -t $COMMON/themes/reveal -i -d $DEST.html $CWD
