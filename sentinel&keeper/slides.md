@@ -1,9 +1,10 @@
 # Redis Sentinel & <br /> RedisKeeper
-.fx: cover
 
 <tianzhongbo@douban.com>
 
 2012-09-20
+
+.fx: cover
 
 ---
 ## Problems
@@ -30,7 +31,7 @@
 * Peer synchronization with custom API.
 * Work in progress, currently in unstable branch.
 
-[Redis Unstable on GitHub](https://github.com/antirez/redis/branches/unstable)
+[Redis Sentinel](http://redis.io/topics/sentinel)
 
 ---
 ## General Process
@@ -86,6 +87,7 @@
     * Client subscribe sentinel's channels for notification
 * RedisKeeper
     * Using zookeeper's notification event.
+    * Client wrapper with compatible interface.
 
 ---
 ## Tilt Mode
@@ -96,6 +98,30 @@
     * Leave tilt mode when everything is normal for 30s.
 
 ---
+## Comparation
+* Redis Sentinel
+    * Official, distributed, better checking mechanism, less dependencies.
+    * Complex, time-sensitive, long recovery time, error-prone (?), hard to use.
+* Redis Keeper
+    * Simple, easy to use, in time recovery.
+    * Homebrew, single point (currently), dictator's view, master bouncing, external dependency.
+
+---
+## Future Work
+* RedisKeeper compatible with Redis Sentinel.
+* Improve RedisKeeper checking process.
+* Distributed RedisKeeper monitor.
+* Watching redis sentinel development.
+
+---
+## Q & A
+
+.fx: shout
+
+---
+## Thank you!
+
+.fx: shout
 
 <!-- 
 vim: filetype=markdown
