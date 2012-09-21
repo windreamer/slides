@@ -46,7 +46,7 @@ table {
 	border-spacing:0;
 	}
 BODY {
-	font:25px/1.8 'Sans', sans-serif;
+	font:25px/1.8 'Sans-Serif', sans-serif;
 	counter-reset:paging;
 	}
 
@@ -78,7 +78,7 @@ BODY {
 .slide header {
 	margin:0 0 58px;
 	color:#666;
-	font:bold 40px/1.13 'Sans', sans-serif;
+	font:bold 40px/1.13 'Sans-Serif', sans-serif;
 	}
 
 /* Elements */
@@ -99,7 +99,7 @@ BODY {
 .slide a[target=_blank]:after {
 	position:absolute;
 	margin-left:7px;
-	font-family:'Sans';
+	font-family:'Sans-Serif';
 	content:'\005E';
 	}
 .slide b,
@@ -122,7 +122,7 @@ BODY {
 	-moz-tab-size:4;
 	-o-tab-size:4;
 	tab-size:4;
-	font-family: 'Sans', monospace;
+	font-family: 'Sans-Serif', monospace;
 	}
 
 /* Quote */
@@ -133,7 +133,7 @@ BODY {
 	position:absolute;
 	margin:-15px 0 0 -80px;
 	color:#CCC;
-	font:200px/1 'Sans', sans-serif;
+	font:200px/1 'Sans-Serif', sans-serif;
 	content:'\201C'; /* ldquo */
 	}
 
@@ -297,7 +297,7 @@ BODY {
 	text-shadow:0 1px 1px #8D8E90;
 	}
 	.list .caption h1 {
-		font:bold 50px/1 'Sans', sans-serif;
+		font:bold 50px/1 'Sans-Serif', sans-serif;
 		}
 	.list .caption a {
 		color:#4B86C2;
