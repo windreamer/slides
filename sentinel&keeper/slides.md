@@ -111,7 +111,7 @@
 * RedisKeeper compatible with Redis Sentinel.
 * Improve RedisKeeper checking process.
 * Distributed RedisKeeper monitor.
-* Watching redis sentinel development.
+* Follow redis sentinel's progress.
 
 ---
 ## Q & A
